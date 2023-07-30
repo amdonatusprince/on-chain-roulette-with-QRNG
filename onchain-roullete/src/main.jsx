@@ -25,7 +25,7 @@ const { chains, provider } = configureChains(
   [
     jsonRpcProvider({
       rpc: (polygonMumbai) => ({
-        http: 'https://nd-982-869-998.p2pify.com/1a964fe9b780c716cb06ad840d6bef51',
+        http: import.meta.env.VITE_CHAINSTACK_NODE_RPC_ENDPOINT,
       }),
     }),
   ],
