@@ -10,7 +10,7 @@ import {
 
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { polygonMumbai } from "wagmi/chains";
-import { publicProvider } from "wagmi/providers/public";
+import { jsonRpcProvider } from '@wagmi/core/providers/jsonRpc'
 
 //routes import
 import App from "./App";
@@ -20,17 +20,11 @@ import "@rainbow-me/rainbowkit/styles.css";
 import "./styles/site.css";
 
 //wagmi
-// const { chains, provider } = configureChains(
-//   [polygonMumbai],
-//   [publicProvider()]
-// );
-
-import { jsonRpcProvider } from '@wagmi/core/providers/jsonRpc'
-const { chains, publicClient } = configureChains(
+const { chains, provider } = configureChains(
   [polygonMumbai],
   [
     jsonRpcProvider({
-      rpc: (chain) => ({
+      rpc: (polygonMumbai) => ({
         http: 'https://nd-982-869-998.p2pify.com/1a964fe9b780c716cb06ad840d6bef51',
       }),
     }),
@@ -43,7 +37,7 @@ const { connectors } = getDefaultWallets({
 });
 
 const wagmiClient = createClient({
-  publicClient,
+  // publicClient,
   autoConnect: true,
   connectors,
   provider,
