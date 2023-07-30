@@ -20,10 +20,22 @@ import "@rainbow-me/rainbowkit/styles.css";
 import "./styles/site.css";
 
 //wagmi
-const { chains, provider } = configureChains(
+// const { chains, provider } = configureChains(
+//   [polygonMumbai],
+//   [publicProvider()]
+// );
+
+import { jsonRpcProvider } from '@wagmi/core/providers/jsonRpc'
+const { chains, publicClient } = configureChains(
   [polygonMumbai],
-  [publicProvider()]
-);
+  [
+    jsonRpcProvider({
+      rpc: (chain) => ({
+        http: 'https://nd-982-869-998.p2pify.com/1a964fe9b780c716cb06ad840d6bef51',
+      }),
+    }),
+  ],
+)
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
@@ -31,6 +43,7 @@ const { connectors } = getDefaultWallets({
 });
 
 const wagmiClient = createClient({
+  publicClient,
   autoConnect: true,
   connectors,
   provider,
