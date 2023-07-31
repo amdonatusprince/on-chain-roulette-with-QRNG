@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@api3/airnode-protocol": "^0.10.0",
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@rainbow-me/rainbowkit": "^0.8.1",
     "buffer": "^6.0.3",
     "decimal.js": "^10.4.3",
@@ -22,6 +23,7 @@
     "react-animate-on-change": "^2.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
     "sass": "^1.60.0",
     "scss": "^0.2.4",
     "viem": "^1.4.2",
