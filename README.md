@@ -10,7 +10,7 @@
 
 With an elastic node, you pay for JSON-RPC requests to the node and do not pay for the compute and storage resources used by the node. </p>
 
-<p>The integration is made with <a href="https://www.rainbowkit.com/">RainbowKit </a> and <a href="https://wagmi.sh/">Wagmi </a> enabling users of the dApp to easily connect their preferred wallet address and also ibteract with smart contract functions on the blockchain. </p>
+<p>The integration is made with <a href="https://www.rainbowkit.com/">RainbowKit </a> and <a href="https://wagmi.sh/">Wagmi </a> enabling users of the dApp to easily connect their preferred wallet address and also interact with smart contract functions on the blockchain. </p>
 
 ---
 
