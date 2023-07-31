@@ -6,7 +6,7 @@ import { wheel } from "./wheel";
 
 const useStore = create(
   devtools((set, get) => ({
-    contractAddress: "0x18971C573cEa4e23925aa0fDAd023929dDe74a53",
+    contractAddress: import.meta.env.VITE_QRNG_ROULETTE_CONTRACT_ADDRESS,
 
     wheel: wheel(set, get),
     grid: grid(set, get),

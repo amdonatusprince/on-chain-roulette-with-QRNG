@@ -16,6 +16,7 @@
     "decimal.js": "^10.4.3",
     "ethers": "^5.7.2",
     "flipdown": "^0.3.2",
+    "gsap": "^3.11.5",
     "howler": "^2.2.3",
     "react": "^18.2.0",
     "react-animate-on-change": "^2.2.0",
@@ -23,9 +24,9 @@
     "react-router-dom": "^6.8.0",
     "sass": "^1.60.0",
     "scss": "^0.2.4",
+    "viem": "^1.4.2",
     "wagmi": "^0.9.6",
-    "zustand": "^4.3.3",
-    "gsap": "^3.11.5"
+    "zustand": "^4.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -35,8 +36,8 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
-    "vite": "^4.4.5",
     "sass": "^1.60.0",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "vite": "^4.4.5"
   }
 }
